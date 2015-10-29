@@ -7,7 +7,7 @@ framework to work with [node](http://nodejs.org). I've mainly stripped out the b
 
 fork from https://github.com/nomiddlename/log4js-node
 
-The help of this module: 
+The help of this module:
 1<span style="font-family:'宋体';">、</span>init
 ```javascript
 global._Log = require('log-4js')();

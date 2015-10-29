@@ -4,61 +4,68 @@
 
 This is a conversion of the [log4js](https://github.com/stritti/log4js)
 framework to work with [node](http://nodejs.org). I've mainly stripped out the browser-specific code and tidied up some of the javascript. 
-
-fork from https://github.com/nomiddlename/log4js-node
-
-The help of this module:
-1、init
-```javascript
-global._Log = require('log-4js')();
-```
-or
-```javascript
-global._Log = require('log-4js')(config);
-```
-the config is the same as original log4js module
-2、use
-you can use it anywhere：
-```javascript
-_Log.trace('db query error,id:' + 1);
-_Log.debug('db query error,id:' + 1);
-_Log.info('db query error,id:' + 1);
-_Log.warn('db query error,id:' + 1);
-_Log.error('db query error,id:' + 1);
-_Log.fatal('db query error,id:' + 1);
-_Log.traceObj('db query error,params:', {id: 1, name: 'tom'});
-_Log.errorObj('db query error,params:', {id: 1, name: 'tom'});
-_Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});
-```
-3、print
-[2015-10-29 16:12:28.107] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:7:6)
-db query error,id:1
-[2015-10-29 16:12:28.108] [DEBUG] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:8:6)
-db query error,id:1
-[2015-10-29 16:12:28.109] [INFO] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:9:6)
-db query error,id:1
-[2015-10-29 16:12:28.109] [WARN] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:10:6)
-db query error,id:1
-[2015-10-29 16:12:28.110] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:11:6)
-db query error,id:1
-[2015-10-29 16:12:28.110] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:12:6)
-db query error,id:1
-[2015-10-29 16:12:28.110] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:13:6)
-db query error,params:
-[2015-10-29 16:12:28.110] [TRACE] - - { id: 1, name: 'tom' }
-[2015-10-29 16:12:28.112] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:14:6)
-db query error,params:
-[2015-10-29 16:12:28.112] [ERROR] - - { id: 1, name: 'tom' }
-[2015-10-29 16:12:28.112] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:15:6)
-db query error,params:
-[2015-10-29 16:12:28.112] [FATAL] - - { id: 1, name: 'tom' }
-
-
-
-
-The help of original module:
-Out of the box it supports the following features:
-
+<span style="font-family:Arial;font-size:14px;"><br />
+<br />
+fork from https://github.com/nomiddlename/log4js-node<br />
+<br />
+<br />
+The help of this module:<br />
+1、init<br />
+```javascript<br />
+global._Log = require('log-4js')();<br />
+```<br />
+or<br />
+```javascript<br />
+global._Log = require('log-4js')(config);<br />
+```<br />
+the config is the same as original log4js module<br />
+2、use<br />
+you can use it anywhere：<br />
+```javascript<br />
+_Log.trace('db query error,id:' + 1);<br />
+_Log.debug('db query error,id:' + 1);<br />
+_Log.info('db query error,id:' + 1);<br />
+_Log.warn('db query error,id:' + 1);<br />
+_Log.error('db query error,id:' + 1);<br />
+_Log.fatal('db query error,id:' + 1);<br />
+_Log.traceObj('db query error,params:', {id: 1, name: 'tom'});<br />
+_Log.errorObj('db query error,params:', {id: 1, name: 'tom'});<br />
+_Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});<br />
+```<br />
+3、print<br />
+[2015-10-29 16:12:28.107] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:7:6)<br />
+db query error,id:1<br />
+[2015-10-29 16:12:28.108] [DEBUG] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:8:6)<br />
+db query error,id:1<br />
+[2015-10-29 16:12:28.109] [INFO] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:9:6)<br />
+db query error,id:1<br />
+[2015-10-29 16:12:28.109] [WARN] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:10:6)<br />
+db query error,id:1<br />
+[2015-10-29 16:12:28.110] [ERROR] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:11:6)<br />
+db query error,id:1<br />
+[2015-10-29 16:12:28.110] [FATAL] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:12:6)<br />
+db query error,id:1<br />
+[2015-10-29 16:12:28.110] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:13:6)<br />
+db query error,params:<br />
+[2015-10-29 16:12:28.110] [TRACE] - - { id: 1, name: 'tom' }<br />
+[2015-10-29 16:12:28.112] [ERROR] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:14:6)<br />
+db query error,params:<br />
+[2015-10-29 16:12:28.112] [ERROR] - - { id: 1, name: 'tom' }<br />
+[2015-10-29 16:12:28.112] [FATAL] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:15:6)<br />
+db query error,params:<br />
+[2015-10-29 16:12:28.112] [FATAL] - - { id: 1, name: 'tom' }<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+The help of original module:<br />
+Out of the box it supports the following features:</span>
+<pre style="background-color: rgb(12, 16, 33);"><span style="font-family:Arial, Helvetica, sans-serif;"><span style="white-space: normal;">
+</span></span></pre>
 * coloured console logging
 * replacement of node's console.log functions (optional)
 * file appender, with log rolling based on file size
