@@ -7,6 +7,56 @@ framework to work with [node](http://nodejs.org). I've mainly stripped out the b
 
 fork from https://github.com/nomiddlename/log4js-node
 
+The help of this module:
+1、init
+```javascript
+global._Log = require('log-4js')();
+```
+or
+```javascript
+global._Log = require('log-4js')(config);
+```
+the config is the same as original log4js module
+2、use
+you can use it anywhere：
+```javascript
+_Log.trace('db query error,id:' + 1);
+_Log.debug('db query error,id:' + 1);
+_Log.info('db query error,id:' + 1);
+_Log.warn('db query error,id:' + 1);
+_Log.error('db query error,id:' + 1);
+_Log.fatal('db query error,id:' + 1);
+_Log.traceObj('db query error,params:', {id: 1, name: 'tom'});
+_Log.errorObj('db query error,params:', {id: 1, name: 'tom'});
+_Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});
+```
+3、print
+[2015-10-29 16:12:28.107] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:7:6)
+db query error,id:1
+[2015-10-29 16:12:28.108] [DEBUG] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:8:6)
+db query error,id:1
+[2015-10-29 16:12:28.109] [INFO] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:9:6)
+db query error,id:1
+[2015-10-29 16:12:28.109] [WARN] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:10:6)
+db query error,id:1
+[2015-10-29 16:12:28.110] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:11:6)
+db query error,id:1
+[2015-10-29 16:12:28.110] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:12:6)
+db query error,id:1
+[2015-10-29 16:12:28.110] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:13:6)
+db query error,params:
+[2015-10-29 16:12:28.110] [TRACE] - - { id: 1, name: 'tom' }
+[2015-10-29 16:12:28.112] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:14:6)
+db query error,params:
+[2015-10-29 16:12:28.112] [ERROR] - - { id: 1, name: 'tom' }
+[2015-10-29 16:12:28.112] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:15:6)
+db query error,params:
+[2015-10-29 16:12:28.112] [FATAL] - - { id: 1, name: 'tom' }
+
+
+
+
+The help of original module:
 Out of the box it supports the following features:
 
 * coloured console logging

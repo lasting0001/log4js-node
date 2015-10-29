@@ -9,7 +9,7 @@
     "node"
   ],
   "license": "Apache-2.0",
-  "main": "./lib/log4js",
+  "main": "./src/log",
   "author": "jun.li <514332157@qq.com>",
   "repository": {
     "type": "git",
