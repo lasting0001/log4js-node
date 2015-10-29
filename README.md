@@ -33,7 +33,7 @@ NOTE: from log4js 0.5 onwards you'll need to explicitly enable replacement of no
 
 ## installation
 
-npm install log4js
+npm install log-4js
 
 
 ## usage

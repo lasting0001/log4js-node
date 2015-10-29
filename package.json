@@ -1,7 +1,7 @@
 {
-  "name": "log4js",
+  "name": "log-4js",
   "version": "0.6.27",
-  "description": "Port of Log4js to work with node.",
+  "description": "A logger with file and line number for nodejs based on log4js-node.",
   "keywords": [
     "logging",
     "log",
@@ -10,13 +10,13 @@
   ],
   "license": "Apache-2.0",
   "main": "./lib/log4js",
-  "author": "Gareth Jones <gareth.nomiddlename@gmail.com>",
+  "author": "jun.li <514332157@qq.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nomiddlename/log4js-node.git"
+    "url": "git+https://github.com/lasting0001/log4js-node.git"
   },
   "bugs": {
-    "url": "http://github.com/nomiddlename/log4js-node/issues"
+    "url": "https://github.com/lasting0001/log4js-node/issues"
   },
   "engines": {
     "node": ">=0.8"
@@ -25,8 +25,8 @@
     "test": "vows"
   },
   "directories": {
-    "test": "test",
-    "lib": "lib"
+    "example": "examples",
+    "test": "test"
   },
   "dependencies": {
     "async": "~0.2.0",
@@ -41,5 +41,6 @@
   },
   "browser": {
     "os": false
-  }
+  },
+  "homepage": "https://github.com/lasting0001/log4js-node#readme"
 }
