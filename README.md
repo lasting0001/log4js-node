@@ -5,6 +5,8 @@
 This is a conversion of the [log4js](https://github.com/stritti/log4js)
 framework to work with [node](http://nodejs.org). I've mainly stripped out the browser-specific code and tidied up some of the javascript. 
 
+fork from https://github.com/lasting0001/log4js-node
+
 Out of the box it supports the following features:
 
 * coloured console logging
