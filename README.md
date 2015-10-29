@@ -33,27 +33,29 @@ _Log.errorObj('db query error,params:', {id: 1, name: 'tom'});
 _Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});
 ```
 3、print<br />
-[2015-10-29 16:12:28.107] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:7:6)<br />
-db query error,id:1<br />
-[2015-10-29 16:12:28.108] [DEBUG] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:8:6)<br />
-db query error,id:1<br />
-[2015-10-29 16:12:28.109] [INFO] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:9:6)<br />
-db query error,id:1<br />
-[2015-10-29 16:12:28.109] [WARN] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:10:6)<br />
-db query error,id:1<br />
-[2015-10-29 16:12:28.110] [ERROR] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:11:6)<br />
-db query error,id:1<br />
-[2015-10-29 16:12:28.110] [FATAL] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:12:6)<br />
-db query error,id:1<br />
-[2015-10-29 16:12:28.110] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:13:6)<br />
-db query error,params:<br />
-[2015-10-29 16:12:28.110] [TRACE] - - { id: 1, name: 'tom' }<br />
-[2015-10-29 16:12:28.112] [ERROR] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:14:6)<br />
-db query error,params:<br />
-[2015-10-29 16:12:28.112] [ERROR] - - { id: 1, name: 'tom' }<br />
-[2015-10-29 16:12:28.112] [FATAL] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:15:6)<br />
-db query error,params:<br />
-[2015-10-29 16:12:28.112] [FATAL] - - { id: 1, name: 'tom' }<br />
+```bash
+[2015-10-29 16:12:28.107] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:7:6)
+db query error,id:1
+[2015-10-29 16:12:28.108] [DEBUG] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:8:6)
+db query error,id:1
+[2015-10-29 16:12:28.109] [INFO] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:9:6)
+db query error,id:1
+[2015-10-29 16:12:28.109] [WARN] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:10:6)
+db query error,id:1
+[2015-10-29 16:12:28.110] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:11:6)
+db query error,id:1
+[2015-10-29 16:12:28.110] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:12:6)
+db query error,id:1
+[2015-10-29 16:12:28.110] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:13:6)
+db query error,params:
+[2015-10-29 16:12:28.110] [TRACE] - - { id: 1, name: 'tom' }
+[2015-10-29 16:12:28.112] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:14:6)
+db query error,params:
+[2015-10-29 16:12:28.112] [ERROR] - - { id: 1, name: 'tom' }
+[2015-10-29 16:12:28.112] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:15:6)
+db query error,params:
+[2015-10-29 16:12:28.112] [FATAL] - - { id: 1, name: 'tom' }
+```
 <br />
 <br />
 <br />
