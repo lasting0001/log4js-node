@@ -40,7 +40,7 @@ db query error,id:1
 [2015-10-29 16:12:28.109] [WARN] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:10:6)
 db query error,id:1
 [2015-10-29 16:12:28.110] [ERROR] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:11:6)
-db query error,id:1
+db query error,id:1 
 [2015-10-29 16:12:28.110] [FATAL] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:12:6)
 db query error,id:1
 [2015-10-29 16:12:28.110] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:13:6)
