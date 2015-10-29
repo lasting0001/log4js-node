@@ -1,6 +1,6 @@
-# log4js-node [![Build Status](https://secure.travis-ci.org/nomiddlename/log4js-node.png?branch=master)](http://travis-ci.org/nomiddlename/log4js-node)
+<pre style="background-color:#0c1021;color:#f8f8f8;font-family:'Consolas';font-size:10.5pt;"># log4js-node [![Build Status](https://secure.travis-ci.org/nomiddlename/log4js-node.png?branch=master)](http://travis-ci.org/nomiddlename/log4js-node)
 
-[![NPM](https://nodei.co/npm/log4js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/log4js/)
+[![NPM](https://nodei.co/npm/log4js.png?downloads=true&amp;downloadRank=true&amp;stars=true)](https://nodei.co/npm/log4js/)
 
 This is a conversion of the [log4js](https://github.com/stritti/log4js)
 framework to work with [node](http://nodejs.org). I've mainly stripped out the browser-specific code and tidied up some of the javascript. 
@@ -8,7 +8,7 @@ framework to work with [node](http://nodejs.org). I've mainly stripped out the b
 fork from https://github.com/nomiddlename/log4js-node
 
 The help of this module:
-1、init
+1<span style="font-family:'宋体';">、</span>init
 ```javascript
 global._Log = require('log-4js')();
 ```
@@ -17,9 +17,9 @@ or
 global._Log = require('log-4js')(config);
 ```
 the config is the same as original log4js module
-2、use
-you can use it anywhere：
-```javascript
+2<span style="font-family:'宋体';">、</span>use
+you can use it anywhere<span style="font-family:'宋体';">：
+</span>```javascript
 _Log.trace('db query error,id:' + 1);
 _Log.debug('db query error,id:' + 1);
 _Log.info('db query error,id:' + 1);
@@ -30,26 +30,26 @@ _Log.traceObj('db query error,params:', {id: 1, name: 'tom'});
 _Log.errorObj('db query error,params:', {id: 1, name: 'tom'});
 _Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});
 ```
-3、print
-[2015-10-29 16:12:28.107] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:7:6)
+3<span style="font-family:'宋体';">、</span>print
+[2015-10-29 16:12:28.107] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:7:6)
 db query error,id:1
-[2015-10-29 16:12:28.108] [DEBUG] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:8:6)
+[2015-10-29 16:12:28.108] [DEBUG] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:8:6)
 db query error,id:1
-[2015-10-29 16:12:28.109] [INFO] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:9:6)
+[2015-10-29 16:12:28.109] [INFO] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:9:6)
 db query error,id:1
-[2015-10-29 16:12:28.109] [WARN] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:10:6)
+[2015-10-29 16:12:28.109] [WARN] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:10:6)
 db query error,id:1
-[2015-10-29 16:12:28.110] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:11:6)
+[2015-10-29 16:12:28.110] [ERROR] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:11:6)
 db query error,id:1
-[2015-10-29 16:12:28.110] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:12:6)
+[2015-10-29 16:12:28.110] [FATAL] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:12:6)
 db query error,id:1
-[2015-10-29 16:12:28.110] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:13:6)
+[2015-10-29 16:12:28.110] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:13:6)
 db query error,params:
 [2015-10-29 16:12:28.110] [TRACE] - - { id: 1, name: 'tom' }
-[2015-10-29 16:12:28.112] [ERROR] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:14:6)
+[2015-10-29 16:12:28.112] [ERROR] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:14:6)
 db query error,params:
 [2015-10-29 16:12:28.112] [ERROR] - - { id: 1, name: 'tom' }
-[2015-10-29 16:12:28.112] [FATAL] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:15:6)
+[2015-10-29 16:12:28.112] [FATAL] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:15:6)
 db query error,params:
 [2015-10-29 16:12:28.112] [FATAL] - - { id: 1, name: 'tom' }
 
@@ -77,7 +77,7 @@ NOTE: from log4js 0.5 onwards you'll need to explicitly enable replacement of no
 ```javascript
 {
   appenders: [
-    { type: "console" }
+    { type: &quot;console&quot; }
   ],
   replaceConsole: true
 }
@@ -94,7 +94,7 @@ Minimalist version:
 ```javascript
 var log4js = require('log4js');
 var logger = log4js.getLogger();
-logger.debug("Some debug messages");
+logger.debug(&quot;Some debug messages&quot;);
 ```
 By default, log4js outputs to stdout with the coloured layout (thanks to [masylum](http://github.com/masylum)), so for the above you would see:
 ```bash
@@ -160,26 +160,26 @@ For FileAppender you can also pass the path to the log directory as an option wh
 ```javascript
 log4js.configure('my_log4js_configuration.json', { cwd: '/absolute/path/to/log/dir' });
 ```
-If you have already defined an absolute path for one of the FileAppenders in the configuration file, you could add a "absolute": true to the particular FileAppender to override the cwd option passed. Here is an example configuration file:
+If you have already defined an absolute path for one of the FileAppenders in the configuration file, you could add a &quot;absolute&quot;: true to the particular FileAppender to override the cwd option passed. Here is an example configuration file:
 
 #### my_log4js_configuration.json ####
 ```json
 {
-  "appenders": [
+  &quot;appenders&quot;: [
     {
-      "type": "file",
-      "filename": "relative/path/to/log_file.log",
-      "maxLogSize": 20480,
-      "backups": 3,
-      "category": "relative-logger"
+      &quot;type&quot;: &quot;file&quot;,
+      &quot;filename&quot;: &quot;relative/path/to/log_file.log&quot;,
+      &quot;maxLogSize&quot;: 20480,
+      &quot;backups&quot;: 3,
+      &quot;category&quot;: &quot;relative-logger&quot;
     },
     {
-      "type": "file",
-      "absolute": true,
-      "filename": "/absolute/path/to/log_file.log",
-      "maxLogSize": 20480,
-      "backups": 10,
-      "category": "absolute-logger"          
+      &quot;type&quot;: &quot;file&quot;,
+      &quot;absolute&quot;: true,
+      &quot;filename&quot;: &quot;/absolute/path/to/log_file.log&quot;,
+      &quot;maxLogSize&quot;: 20480,
+      &quot;backups&quot;: 10,
+      &quot;category&quot;: &quot;absolute-logger&quot;          
     }
   ]
 }
@@ -199,3 +199,4 @@ Contributions welcome, but take a look at the [rules](https://github.com/nomiddl
 The original log4js was distributed under the Apache 2.0 License, and so is this. I've tried to
 keep the original copyright and author credits in place, except in sections that I have rewritten
 extensively.
+</pre>
