@@ -10,21 +10,20 @@ fork from https://github.com/nomiddlename/log4js-node<br />
 <br />
 
 ## installation
-
-npm install log-4js
-<br />
-The help of this module:<br />
-1、init<br />
+npm install log-4js    
+The help of this module:   
+1、init   
 ```javascript
 global._Log = require('log-4js')();
 ```
-or<br />
+or   
 ```javascript
 global._Log = require('log-4js')(config);
 ```
-the config is the same as original log4js module<br />
-2、use<br />
-you can use it anywhere：<br />
+the config is the same as original log4js module     
+   
+2、use   
+you can use it anywhere：   
 ```javascript
 _Log.trace('db query error,id:' + 1);
 _Log.debug('db query error,id:' + 1);
@@ -36,7 +35,7 @@ _Log.traceObj('db query error,params:', {id: 1, name: 'tom'});
 _Log.errorObj('db query error,params:', {id: 1, name: 'tom'});
 _Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});
 ```
-3、print<br />
+3、print   
 ```bash
 [2015-10-29 16:12:28.107] [TRACE] - - at Object.<anonymous> (d:\Documents\WorkSpace\fps\test\test.js:7:6)
 db query error,id:1
