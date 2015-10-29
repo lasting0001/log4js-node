@@ -8,6 +8,10 @@ framework to work with [node](http://nodejs.org). I've mainly stripped out the b
 <br />
 fork from https://github.com/nomiddlename/log4js-node<br />
 <br />
+
+## installation
+
+npm install log-4js
 <br />
 The help of this module:<br />
 1、init<br />
@@ -91,10 +95,6 @@ NOTE: from log4js 0.5 onwards you'll need to explicitly enable replacement of no
   replaceConsole: true
 }
 ```
-
-## installation
-
-npm install log-4js
 
 
 ## usage
