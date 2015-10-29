@@ -11,26 +11,26 @@ fork from https://github.com/nomiddlename/log4js-node<br />
 <br />
 The help of this module:<br />
 1、init<br />
-```javascript<br />
-global._Log = require('log-4js')();<br />
+```javascript
+global._Log = require('log-4js')();
 ```<br />
 or<br />
-```javascript<br />
-global._Log = require('log-4js')(config);<br />
+```javascript
+global._Log = require('log-4js')(config);
 ```<br />
 the config is the same as original log4js module<br />
 2、use<br />
 you can use it anywhere：<br />
-```javascript<br />
-_Log.trace('db query error,id:' + 1);<br />
-_Log.debug('db query error,id:' + 1);<br />
-_Log.info('db query error,id:' + 1);<br />
-_Log.warn('db query error,id:' + 1);<br />
-_Log.error('db query error,id:' + 1);<br />
-_Log.fatal('db query error,id:' + 1);<br />
-_Log.traceObj('db query error,params:', {id: 1, name: 'tom'});<br />
-_Log.errorObj('db query error,params:', {id: 1, name: 'tom'});<br />
-_Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});<br />
+```javascript
+_Log.trace('db query error,id:' + 1);
+_Log.debug('db query error,id:' + 1);
+_Log.info('db query error,id:' + 1);
+_Log.warn('db query error,id:' + 1);
+_Log.error('db query error,id:' + 1);
+_Log.fatal('db query error,id:' + 1);
+_Log.traceObj('db query error,params:', {id: 1, name: 'tom'});
+_Log.errorObj('db query error,params:', {id: 1, name: 'tom'});
+_Log.fatalObj('db query error,params:', {id: 1, name: 'tom'});
 ```<br />
 3、print<br />
 [2015-10-29 16:12:28.107] [TRACE] - - at Object.&lt;anonymous&gt; (d:\Documents\WorkSpace\fps\test\test.js:7:6)<br />
